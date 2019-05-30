@@ -4,14 +4,15 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-    title: 'S. Michael Cannon',
+    title: 'C & K Wedding',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: 'Over engineered resume site' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Rouge+Script&display=swap' }
     ]
   },
   /*
@@ -38,8 +39,10 @@ module.exports = {
   },
   modules: [
     // Simple usage
-    ['@nuxtjs/google-analytics', {
+    [
+      '@nuxtjs/google-analytics', {
       id: 'UA-73202553-1'
-    }]
+      }
+    ]
  ]
 }

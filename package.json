@@ -1,8 +1,8 @@
 {
-  "name": "nuxt-resume-site",
-  "version": "1.0.3",
-  "description": "Over engineered resume site",
-  "author": "cannonmike92@gmail.com",
+  "name": "mike-and-jasmines-wedding-website",
+  "version": "0.0.1",
+  "description": "Mike and Jasmine's Wedding Website",
+  "author": "mikecannondeveloper@gmail.com",
   "private": true,
   "scripts": {
     "dev": "nuxt",
@@ -17,7 +17,8 @@
   },
   "dependencies": {
     "@nuxtjs/google-analytics": "^2.0.2",
-    "nuxt": "^1.0.0"
+    "nuxt": "^1.0.0",
+    "nuxt-webfontloader": "^1.1.0"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.1",
