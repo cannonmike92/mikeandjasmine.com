@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1 class="title">
-      The Wedding of Mike Cannon & Jasmine Khaleel
+      The Wedding of Jasmine Khaleel & Mike Cannon
     </h1>
     <h2 class="subheader">April 11th, 2020</h2>
     <img class="img-circle" src="~/assets/engagement_ring.jpg" alt="Engagement Ring">
