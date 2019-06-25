@@ -1,11 +1,10 @@
 <template>
   <div>
-  <img src="~/assets/engagement_ring.jpg" alt="Engagement Ring">
-  <div><br>
     <h1 class="title">
       The Wedding of Mike Cannon & Jasmine Khaleel
     </h1>
-  </div>
+    <h2 class="subheader">April 11th, 2020</h2>
+    <img class="img-circle" src="~/assets/engagement_ring.jpg" alt="Engagement Ring">
   </div>
 </template>
 
@@ -39,16 +38,25 @@ export default {
   text-align: center;
   font-weight: 400;
   font-size: 5em;
-  color: #ffffff;
+  color: #000000;
   letter-spacing: 1.5px;
 }
 
-img {
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  width: 100%;
-  z-index: -1;
+.subheader {
+  font-family: 'Rouge Script', cursive;
+  text-align: center;
+  font-weight: 400;
+  font-size: 4em;
+  color: #000000;
+  letter-spacing: 1.5px;
 }
+
+.img-circle {
+  border-radius: 50%;
+  display:block;
+  margin:auto;
+}
+
+
 
 </style>
