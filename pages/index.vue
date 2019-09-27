@@ -1,5 +1,6 @@
 <template>
   <div>
+    <nav-bar-component />
     <h1 class="title">
       The Wedding of Jasmine Khaleel & Mike Cannon
     </h1>
@@ -9,11 +10,10 @@
 </template>
 
 <script>
-import AppLogo from '~/components/AppLogo.vue'
-
+import NavBar from '@/components/navbar'
 export default {
   components: {
-    AppLogo
+    'nav-bar-component': NavBar
   },
   data() {
     return {
@@ -57,7 +57,4 @@ export default {
   display:block;
   margin:auto;
 }
-
-
-
 </style>

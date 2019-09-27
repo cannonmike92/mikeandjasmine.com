@@ -43,6 +43,21 @@ module.exports = {
       '@nuxtjs/google-analytics', {
       id: 'UA-73202553-1'
       }
-    ]
- ]
+    ],
+    ['nuxt-fontawesome', {
+      component: 'fa',
+      imports: [
+        //import whole set
+        {
+          set: '@fortawesome/free-solid-svg-icons',
+          icons: ['fas']
+        }
+      ]
+    }],
+    'bootstrap-vue/nuxt',
+  ],
+  bootstrapVue: {
+    bootstrapCSS: true, // Or `css: false`
+    bootstrapVueCSS: true // Or `bvCSS: false`
+  }
 }
