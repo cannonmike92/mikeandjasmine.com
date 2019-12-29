@@ -1,6 +1,4 @@
-# nuxt-resume-site
-
-> Over engineered resume site
+# Mike and Jasmine's Wedding Website
 
 ## Build Setup
 
