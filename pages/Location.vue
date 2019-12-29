@@ -44,7 +44,7 @@ export default {
   font-family: 'Rouge Script', cursive;
   text-align: center;
   font-weight: 400;
-  font-size: 4em;
+  font-size: 250%;
   color: #000000;
   letter-spacing: 1.5px;
 }
@@ -63,7 +63,7 @@ img {
   font-family: 'Rouge Script', cursive;
   text-align: center;
   font-weight: 400;
-  font-size: 3em;
+  font-size: 150%;
   color: #000000;
   letter-spacing: 1.5px;
 }

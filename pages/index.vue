@@ -5,16 +5,18 @@
       The Wedding of Jasmine Khaleel & Mike Cannon
     </h1>
     <h2 class="subheader">April 11th, 2020</h2><br>
-    <img class="img-circle" src="~/assets/engagement_ring.jpg" alt="Engagement Ring">
+    <b-img fluid center rounded="circle" src="~/assets/engagement_ring.jpg" alt="Engagement Ring"/>
   </div>
 </template>
 
 <script>
 import NavBar from '@/components/navbar';
+import { BImg } from 'bootstrap-vue';
 
 export default {
   components: {
-    'nav-bar-component': NavBar
+    'nav-bar-component': NavBar,
+    'b-img': BImg
   },
   data() {
     return {
@@ -38,7 +40,7 @@ export default {
   font-family: 'Rouge Script', cursive;
   text-align: center;
   font-weight: 400;
-  font-size: 4em;
+  font-size: 250%;
   color: #000000;
   letter-spacing: 1.5px;
 }
@@ -47,7 +49,7 @@ export default {
   font-family: 'Rouge Script', cursive;
   text-align: center;
   font-weight: 400;
-  font-size: 3em;
+  font-size: 150%;
   color: #000000;
   letter-spacing: 1.5px;
 }

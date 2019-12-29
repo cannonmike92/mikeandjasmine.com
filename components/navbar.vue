@@ -6,7 +6,9 @@
         <b-navbar-nav>
           <b-nav-item>
             <a href="/">Save the Date
-            </a><font-awesome-icon icon="home"/></b-nav-item>
+              <font-awesome-icon style="font-size:75%;" icon="home"/>
+            </a>
+          </b-nav-item>
           <!--<b-nav-item>
             <a href="/RSVP">RSVP
             </a></b-nav-item>
@@ -31,7 +33,8 @@
   </div>
 </template>
 <script>
-import { BNav, BNavbar, BNavbarNav, BNavbarToggle, BCollapse } from 'bootstrap-vue'
+import { BNav, BNavbar, BNavbarNav, BNavbarToggle, BCollapse } from 'bootstrap-vue';
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 
 export default {
   name: 'NavBar',
@@ -41,6 +44,7 @@ export default {
     'b-navbar-nav': BNavbarNav,
     'b-navbar-toggle': BNavbarToggle,
     'b-collapse': BCollapse,
+    'font-awesome-icon': FontAwesomeIcon
   },
   data() {
     return {
@@ -55,7 +59,7 @@ export default {
   margin-left: 30px;
   margin-right: 30px;
   font-weight: 400;
-  font-size: 2em;
+  font-size: 150%;
   color: #000000;
   font-family: 'Rouge Script', cursive;
 }
