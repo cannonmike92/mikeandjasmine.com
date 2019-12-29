@@ -26,8 +26,8 @@ module.exports = {
     /*
     ** Run ESLint on save
     */
-    extend (config, { isDev, isClient }) {
-      if (isDev && isClient) {
+    extend (config, { isDev }) {
+      if (isDev && process.client) {
         config.module.rules.push({
           enforce: 'pre',
           test: /\.(js|vue)$/,
@@ -41,7 +41,7 @@ module.exports = {
     // Simple usage
     [
       '@nuxtjs/google-analytics', {
-      id: 'UA-73202553-2'
+      id: 'UA-73202553-3'
       }
     ],
     ['nuxt-fontawesome', {

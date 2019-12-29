@@ -6,7 +6,7 @@
         <b-navbar-nav>
           <b-nav-item>
             <a href="/">Save the Date
-            </a></b-nav-item>
+            </a><font-awesome-icon icon="home"/></b-nav-item>
           <!--<b-nav-item>
             <a href="/RSVP">RSVP
             </a></b-nav-item>
@@ -18,6 +18,9 @@
             </a></b-nav-item>-->
           <b-nav-item>
             <a href="/Location">Location
+            </a></b-nav-item>
+          <b-nav-item>
+            <a href="/Photos">Photos
             </a></b-nav-item>
           <b-nav-item>
             <a href="/Updates">Updates
@@ -55,5 +58,10 @@ export default {
   font-size: 2em;
   color: #000000;
   font-family: 'Rouge Script', cursive;
+}
+</style>
+<style>
+.bg-light {
+  background-color: #FFFFFF !important;
 }
 </style>

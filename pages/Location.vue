@@ -5,7 +5,7 @@
       The Windsor
     </h1>
     <h2 class="subheader">At Hebron Park</h2><br>
-    <img src="https://www.windsorparkdallas.com/wp-content/uploads/2015/09/82.jpg"/>
+    <b-img style="width:60%;" src="https://www.windsorparkdallas.com/wp-content/uploads/2015/09/82.jpg"/>
     <h5><a href="https://goo.gl/maps/KXWdoizLWgw1PBNCA">3016 E. Hebron Parkway • Carrollton, TX 75010 </a></h5>
     <h5><a href="https://www.windsorparkdallas.com/">https://www.windsorparkdallas.com/</a></h5>
     <h5>(972)-306-3300</h5>
@@ -15,9 +15,12 @@
 
 <script>
 import NavBar from '@/components/navbar'
+import { BImg } from 'bootstrap-vue';
+
 export default {
   components: {
-    'nav-bar-component': NavBar
+    'nav-bar-component': NavBar,
+    'b-img': BImg
   },
   data() {
     return {

@@ -10,7 +10,8 @@
 </template>
 
 <script>
-import NavBar from '@/components/navbar'
+import NavBar from '@/components/navbar';
+
 export default {
   components: {
     'nav-bar-component': NavBar
@@ -53,8 +54,11 @@ export default {
 
 .img-circle {
   border-radius: 50%;
-  max-width: 85%;
+  width: 50%;
   display:block;
   margin:auto;
 }
+
+
+
 </style>
