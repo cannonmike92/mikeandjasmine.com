@@ -3,14 +3,28 @@
   <nav-bar-component />
   <p class="subheader">Photos taken by <a href="https://kyrstenashlayphotography.com/">Kyrsten Ashlay Photography</a></p>
   <div class="container">
-      <b-img-lazy v-for="(image, index) in images" :key="index" class="item" style="width:30%;" :src="require(`../assets/engagement-photos/${image}.jpg`)" />
+    <div
+      :key="index"
+      class="item"
+      v-for="(image, index) in images"
+      @click="openModal(image)">
+      <b-img-lazy
+        fluid
+        :src="require(`../assets/engagement-photos/${image}.jpg`)" />
+    </div>
   </div>
+  <b-modal v-model="showModal" hide-footer hide-header size="xl">
+   <b-img-lazy
+      fluid
+     :src="require(`../assets/engagement-photos/${modalImage}.jpg`)" />
+ </b-modal>
 </div>
 </template>
 
 <script>
 import NavBar from '@/components/navbar';
 import {
+  BModal,
   BImgLazy
 } from 'bootstrap-vue';
 
@@ -27,10 +41,23 @@ export default {
         'RailDistrictFriscoTexasEngagement-Jasmine+Mike-KyrstenAshlayPhotography-58-Edit',
         'RailDistrictFriscoTexasEngagement-Jasmine+Mike-KyrstenAshlayPhotography-78-Edit'
       ],
-      index: null
+      index: null,
+      showModal: false,
+      modalImage: 'RailDistrictFriscoTexasEngagement-Jasmine+Mike-KyrstenAshlayPhotography-15-Edit'
     };
   },
+  methods: {
+    openModal(image) {
+      console.log(image);
+      this.modalImage = image;
+      this.showModal = true;
+    },
+    closeModal() {
+      this.showModal = false;
+    }
+  },
   components: {
+    'b-modal': BModal,
     'b-img-lazy': BImgLazy,
     'nav-bar-component': NavBar
   }
@@ -51,5 +78,11 @@ a {
 }
 .item {
   margin: 5px;
+  width: 32%;
+}
+.container {
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
 }
 </style>
