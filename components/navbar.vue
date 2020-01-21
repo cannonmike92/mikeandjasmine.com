@@ -10,7 +10,7 @@
             </a>
           </b-nav-item>
           <!--<b-nav-item>
-            <a href="/RSVP">RSVP
+            <a href="/Menu">Menu
             </a></b-nav-item>
           <b-nav-item>
             <a href="/Registry">Registry
@@ -23,6 +23,9 @@
             </a></b-nav-item>
           <b-nav-item>
             <a href="/Photos">Photos
+            </a></b-nav-item>
+          <b-nav-item>
+            <a href="/RSVP">RSVP
             </a></b-nav-item>
           <b-nav-item>
             <a href="/Updates">Updates

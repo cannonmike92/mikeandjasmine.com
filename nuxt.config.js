@@ -44,6 +44,15 @@ module.exports = {
       id: 'UA-73202553-3'
       }
     ],
+    [
+      '@nuxtjs/recaptcha', {
+        /* reCAPTCHA options */
+        hideBadge: false, // Hide badge element (v3 & v2 via size=invisible)
+        siteKey: '6LeziNEUAAAAAA7C7iEWh_E5yiX1LVqjCMoQvDtb',    // Site key for requests
+        version: 2,     // Version
+        size: 'compact'        // Size: 'compact', 'normal', 'invisible' (v2)
+      }
+    ],
     ['nuxt-fontawesome', {
       component: 'fa',
       imports: [
