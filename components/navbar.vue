@@ -16,7 +16,7 @@
             <a href="/Registry">Registry
             </a></b-nav-item>
           <b-nav-item>
-            <a href="/Schedule">Schedule
+            <a href="/Events">Events
             </a></b-nav-item>-->
           <b-nav-item>
             <a href="/Location">Location

@@ -47,10 +47,9 @@ module.exports = {
     [
       '@nuxtjs/recaptcha', {
         /* reCAPTCHA options */
-        hideBadge: false, // Hide badge element (v3 & v2 via size=invisible)
-        siteKey: '6LeziNEUAAAAAA7C7iEWh_E5yiX1LVqjCMoQvDtb',    // Site key for requests
-        version: 2,     // Version
-        size: 'compact'        // Size: 'compact', 'normal', 'invisible' (v2)
+        siteKey: '6LcjyNEUAAAAAEbjYR_6QHoJ9m1ubP7pv2_zVLGn',    // Site key for requests
+        version: 3,     // Version
+        size: 'invisible'        // Size: 'compact', 'normal', 'invisible' (v2)
       }
     ],
     ['nuxt-fontawesome', {

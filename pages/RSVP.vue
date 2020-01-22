@@ -1,47 +1,49 @@
 <template>
   <div>
     <nav-bar-component />
-    <b-form class="mx-auto">
-      <b-form-group>
-        <b-form-input
-          v-model="email"
-          type="email"
-          required
-          placeholder="Contact Email"
-        />
-        <b-form-input
-          v-model="phone"
-          required
-          placeholder="Contact Phone Number"
-        />
-        <b-input-group v-for="(person, index) in people">
+    <div class="form-container mx-auto">
+      <b-form class="mx-auto">
+        <b-form-group>
           <b-form-input
-            v-model="person.firstName"
+            v-model="email"
+            type="email"
             required
-            placeholder="First Name"
+            placeholder="Contact Email"
           />
           <b-form-input
-            v-model="person.lastName"
+            v-model="phone"
             required
-            placeholder="Last Name"
+            placeholder="Contact Phone Number"
           />
-        </b-input-group>
-        <b-input-group prepend="Number in Party">
-          <b-form-select
-            @change="updateCount"
-            v-model="count"
-            :options="options"
-          >
-          </b-form-select>
-        </b-input-group>
-      </b-form-group>
-      <recaptcha
-        @error="onError"
-        @success="onSuccess"
-        @expired="onExpired"
-      /><br>
-      <b-button @click="submit" variant="primary">Submit</b-button>
-    </b-form>
+          <b-input-group v-for="(person, index) in people" :key="index">
+            <b-form-input
+              v-model="person.firstName"
+              required
+              placeholder="First Name"
+            />
+            <b-form-input
+              v-model="person.lastName"
+              required
+              placeholder="Last Name"
+            />
+          </b-input-group>
+          <b-input-group prepend="Number in Party">
+            <b-form-select
+              @change="updateCount"
+              v-model="count"
+              :options="options"
+            >
+            </b-form-select>
+          </b-input-group>
+        </b-form-group>
+        <recaptcha
+          @error="onError"
+          @success="onSuccess"
+          @expired="onExpired"
+        /><br>
+        <b-button @click="submit" variant="primary">Submit</b-button>
+      </b-form>
+  </div>
   </div>
 </template>
 <script>
@@ -59,6 +61,9 @@ export default {
     'b-button': BButton,
     'b-form': BForm,
   },
+  async mounted() {
+    await this.$recaptcha.init()
+  },
   methods: {
     onSuccess (token) {
       console.log('Succeeded:', token)
@@ -72,7 +77,7 @@ export default {
     async submit() {
       var self = this
       try {
-        const token = await this.$recaptcha.getResponse()
+        const token = await this.$recaptcha.execute('login')
         console.log('ReCaptcha token:', token)
         axios.post('https://ed053gh1zc.execute-api.us-east-1.amazonaws.com/dev', {
           rsvp: {
@@ -132,6 +137,10 @@ export default {
 form {
   max-width: 90%;
   text-align: center;
+}
+.form-container {
+  max-width: 500px;
+  margin: 20px;
 }
 input, select {
   max-width: 95%;

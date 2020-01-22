@@ -5,7 +5,9 @@
       The Wedding of Jasmine Khaleel & Mike Cannon
     </h1>
     <h2 class="subheader">April 11th, 2020</h2><br>
-    <b-img fluid center rounded="circle" src="~/assets/engagement-photos/RailDistrictFriscoTexasEngagement-Jasmine+Mike-KyrstenAshlayPhotography-24-Edit.jpg" alt="Engagement Ring"/>
+    <div class="container">
+      <b-img fluid center rounded="circle" src="~/assets/engagement-photos/RailDistrictFriscoTexasEngagement-Jasmine+Mike-KyrstenAshlayPhotography-24-Edit.jpg" alt="Engagement Ring"/>
+    </div>
   </div>
 </template>
 
@@ -52,13 +54,6 @@ export default {
   font-size: 150%;
   color: #000000;
   letter-spacing: 1.5px;
-}
-
-.img-circle {
-  border-radius: 50%;
-  width: 50%;
-  display:block;
-  margin:auto;
 }
 
 
