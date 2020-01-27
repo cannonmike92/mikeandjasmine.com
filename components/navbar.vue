@@ -5,31 +5,31 @@
       <b-collapse id="nav-collapse" is-nav>
         <b-navbar-nav>
           <b-nav-item>
-            <a href="/">Save the Date
+            <nuxt-link to="/">Save the Date
               <font-awesome-icon style="font-size:75%;" icon="home"/>
-            </a>
+            </nuxt-link>
           </b-nav-item>
           <!--<b-nav-item>
-            <a href="/Menu">Menu
-            </a></b-nav-item>
+            <nuxt-link to="/Menu">Menu
+            </nuxt-link></b-nav-item>
           <b-nav-item>
-            <a href="/Registry">Registry
-            </a></b-nav-item>
+            <nuxt-link to="/Registry">Registry
+            </nuxt-link></b-nav-item>
           <b-nav-item>
-            <a href="/Events">Events
-            </a></b-nav-item>-->
+            <nuxt-link to="/Events">Events
+            </nuxt-link></b-nav-item>-->
           <b-nav-item>
-            <a href="/Location">Location
-            </a></b-nav-item>
+            <nuxt-link to="/Location">Location
+            </nuxt-link></b-nav-item>
           <b-nav-item>
-            <a href="/Photos">Photos
-            </a></b-nav-item>
+            <nuxt-link to="/Photos">Photos
+            </nuxt-link></b-nav-item>
           <b-nav-item>
-            <a href="/RSVP">RSVP
-            </a></b-nav-item>
+            <nuxt-link to="/RSVP">RSVP
+            </nuxt-link></b-nav-item>
           <b-nav-item>
-            <a href="/Updates">Updates
-            </a></b-nav-item>
+            <nuxt-link to="/Updates">Updates
+            </nuxt-link></b-nav-item>
         </b-navbar-nav>
       </b-collapse>
     </b-navbar>

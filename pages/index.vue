@@ -1,14 +1,17 @@
 <template>
   <div>
     <nav-bar-component />
-    <p>Click <a href="/RSVP">here</a> to RSVP!</p>
+    <p>Click <nuxt-link to="/RSVP">here</nuxt-link> to RSVP!</p>
     <div style="margin-top: 20px;">
       <h1 class="title">
         The Wedding of Jasmine Khaleel & Mike Cannon
       </h1>
       <h2 class="subheader">April 11th, 2020</h2><br>
       <div class="container">
-        <b-img fluid center rounded="circle" src="~/assets/engagement-photos/RailDistrictFriscoTexasEngagement-Jasmine+Mike-KyrstenAshlayPhotography-24-Edit.jpg" alt="Engagement Ring"/>
+        <b-img
+          fluid center rounded="circle"
+          src="~/assets/engagement-photos/RailDistrictFriscoTexasEngagement-Jasmine+Mike-KyrstenAshlayPhotography-24-Edit.jpg"
+          alt="Engagement Ring"/>
       </div>
     </div>
   </div>
