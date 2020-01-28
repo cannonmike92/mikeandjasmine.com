@@ -16,8 +16,14 @@
         </b-input-group>
       </b-form-group>
       <recaptcha />
-      <b-button v-if="id.length" :disabled="disableSubmit" @click="update" variant="primary">Update RSVP</b-button>
-      <b-button v-else :disabled="disableSubmit" @click="submit" variant="primary">Submit RSVP</b-button>
+      <b-button v-if="id.length" :disabled="disableSubmit" @click="update" variant="primary">
+        <b-spinner v-if="loading" small/>
+        Update RSVP
+      </b-button>
+      <b-button v-else :disabled="disableSubmit" @click="submit" variant="primary">
+        <b-spinner v-if="loading" small/>
+        Submit RSVP
+      </b-button>
     </b-form>
   </div>
 </div>
@@ -74,6 +80,7 @@ export default {
   methods: {
     async submit() {
       var self = this
+      this.loading = true;
       try {
         const token = await this.$recaptcha.execute('login')
 
@@ -110,6 +117,7 @@ export default {
       }
     },
     async update() {
+      this.loading = true;
       var self = this
       try {
         const token = await this.$recaptcha.execute('login')
@@ -161,7 +169,8 @@ export default {
         firstName: '',
         lastName: ''
       }],
-      options: [1, 2, 3, 4, 5, 6, 7, 8]
+      options: [1, 2, 3, 4, 5, 6, 7, 8],
+      loading: false
     }
   }
 }

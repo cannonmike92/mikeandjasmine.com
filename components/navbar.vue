@@ -9,26 +9,26 @@
               <font-awesome-icon style="font-size:75%;" icon="home"/>
             </nuxt-link>
           </b-nav-item>
+          <b-nav-item>
+            <nuxt-link to="/menu">Menu
+            </nuxt-link></b-nav-item>
           <!--<b-nav-item>
-            <nuxt-link to="/Menu">Menu
-            </nuxt-link></b-nav-item>
-          <b-nav-item>
             <nuxt-link to="/Registry">Registry
-            </nuxt-link></b-nav-item>
-          <b-nav-item>
-            <nuxt-link to="/Events">Events
             </nuxt-link></b-nav-item>-->
           <b-nav-item>
-            <nuxt-link to="/Location">Location
+            <nuxt-link to="/events">Events
             </nuxt-link></b-nav-item>
           <b-nav-item>
-            <nuxt-link to="/Photos">Photos
+            <nuxt-link to="/location">Location
             </nuxt-link></b-nav-item>
           <b-nav-item>
-            <nuxt-link to="/RSVP">RSVP
+            <nuxt-link to="/photos">Photos
             </nuxt-link></b-nav-item>
           <b-nav-item>
-            <nuxt-link to="/Updates">Updates
+            <nuxt-link to="/rsvp">RSVP
+            </nuxt-link></b-nav-item>
+          <b-nav-item>
+            <nuxt-link to="/updates">Updates
             </nuxt-link></b-nav-item>
         </b-navbar-nav>
       </b-collapse>

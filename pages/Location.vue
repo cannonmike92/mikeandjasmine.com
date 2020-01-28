@@ -1,9 +1,10 @@
 <template>
   <div>
     <nav-bar-component />
-    <h1 class="title">
+    <br>
+    <h2 class="title">
       The Windsor
-    </h1>
+    </h2>
     <h2 class="subheader">At Hebron Park</h2><br>
     <b-img style="width:60%;" src="https://www.windsorparkdallas.com/wp-content/uploads/2015/09/82.jpg"/>
     <h5><a href="https://goo.gl/maps/KXWdoizLWgw1PBNCA">3016 E. Hebron Parkway • Carrollton, TX 75010 </a></h5>
@@ -51,6 +52,10 @@ export default {
 
 h5 {
   text-align: center;
+  font-family: 'Rouge Script', cursive;
+  font-weight: 400;
+  color: #000000;
+  letter-spacing: 1.5px;
 }
 
 img {
