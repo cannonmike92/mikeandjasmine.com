@@ -68,7 +68,7 @@ export default {
     if (this.$nuxt._route.params.id) {
       var self = this;
       self.id = this.$nuxt._route.params.id
-      axios.get(`https://ed053gh1zc.execute-api.us-east-1.amazonaws.com/dev/${self.id}`)
+      axios.get(`https://ed053gh1zc.execute-api.us-east-1.amazonaws.com/prod/${self.id}`)
         .then((response) => {
           self.email = response.data.Item.email;
           self.phone = response.data.Item.phone;
@@ -84,7 +84,7 @@ export default {
       try {
         const token = await this.$recaptcha.execute('login')
 
-        axios.post('https://ed053gh1zc.execute-api.us-east-1.amazonaws.com/dev', {
+        axios.post('https://ed053gh1zc.execute-api.us-east-1.amazonaws.com/prod', {
             rsvp: {
               'email': this.email,
               'phone': this.phone,
@@ -122,7 +122,7 @@ export default {
       try {
         const token = await this.$recaptcha.execute('login')
 
-        axios.put(`https://ed053gh1zc.execute-api.us-east-1.amazonaws.com/dev/${this.id}/`, {
+        axios.put(`https://ed053gh1zc.execute-api.us-east-1.amazonaws.com/prod/${this.id}/`, {
             rsvp: {
               'people': this.people
             },
