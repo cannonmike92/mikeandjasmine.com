@@ -1,7 +1,7 @@
 <template>
   <div>
     <nav-bar-component />
-    <p>Click <nuxt-link to="/RSVP">here</nuxt-link> to RSVP!</p>
+    <!--<p>Click <nuxt-link to="/RSVP">here</nuxt-link> to RSVP!</p>-->
     <div style="margin-top: 20px;">
       <h1 class="title">
         The Wedding of Jasmine Khaleel & Mike Cannon
