@@ -14,11 +14,11 @@
             </nuxt-link></b-nav-item>
           <!--<b-nav-item>
             <nuxt-link to="/Registry">Registry
-            </nuxt-link></b-nav-item>-->
+            </nuxt-link></b-nav-item>
           <b-nav-item>
             <nuxt-link to="/events">Events
             </nuxt-link></b-nav-item>
-          <b-nav-item>
+          <b-nav-item>-->
             <nuxt-link to="/location">Location
             </nuxt-link></b-nav-item>
           <b-nav-item>
