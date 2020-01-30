@@ -38,15 +38,11 @@ export default {
 
 h1,h3 {
   text-align: center;
-  font-family: 'Rouge Script', cursive;
-  font-weight: 400;
+  font-family: 'Libre Baskerville', cursive;
   color: #000000;
-  letter-spacing: 1.5px;
 }
 h5 {
-  font-family: 'Rouge Script', cursive;
-  font-weight: 400;
+  font-family: 'Dancing Script', cursive;
   color: #000000;
-  letter-spacing: 1.5px;
 }
 </style>

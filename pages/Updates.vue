@@ -4,15 +4,15 @@
   <div v-if="loading" class="text-center">
     <b-spinner type="grow" style="width: 5rem; height: 5rem; margin-top: 10%;"></b-spinner>
   </div>
-  <div v-else>
-    <h4 class="title">Recent Updates</h4>
+  <div v-else class="container">
+    <h4 class="subheader">Recent Updates</h4>
     <b-card v-for="event in events" v-if="event.active" :key="event.guid" :title="event.title" style="max-width: 40rem;
         display: block;
         margin-left: auto;
         margin-right: auto;" class="mb-2">
       <p style="float:right;color:grey;">
         {{ hrDate(event.modified) }}
-      </p>
+      </p><br><br>
       <p>
         {{ event.body }}
         <a v-if="event.url" :href="event.url">Link</a>
@@ -72,11 +72,22 @@ export default {
 <style>
 .container {
   position: relative;
-  width: 100%;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
   max-width: 960px;
   margin: 0 auto;
   padding: 0 20px;
   box-sizing: border-box;
+}
+
+h4 {
+  font-size: 125%;
+  font-family: 'Dancing Script';
+}
+
+p {
+  font-family: 'Libre Baskerville';
 }
 
 .btn-outline-success {
@@ -85,22 +96,9 @@ export default {
   margin-left: auto;
   margin-right: auto;
 }
-
-.title {
-  font-family: 'Rouge Script', cursive;
-  text-align: center;
-  font-weight: 400;
-  font-size: 4em;
-  color: #000000;
-  letter-spacing: 1.5px;
-}
-
-.subheader {
-  font-family: Serif;
-  text-align: center;
-  font-weight: 400;
-  font-size: 1.25em;
-  color: #000000;
-  letter-spacing: 1.5px;
+</style>
+<style scoped>
+.grecaptcha-badge {
+  display: none !important;
 }
 </style>

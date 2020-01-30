@@ -24,9 +24,9 @@
           <b-nav-item>
             <nuxt-link to="/photos">Photos
             </nuxt-link></b-nav-item>
-          <!--<b-nav-item>
+          <b-nav-item>
             <nuxt-link to="/rsvp">RSVP
-            </nuxt-link></b-nav-item>-->
+            </nuxt-link></b-nav-item>
           <b-nav-item>
             <nuxt-link to="/updates">Updates
             </nuxt-link></b-nav-item>
@@ -61,10 +61,8 @@ export default {
   margin: 5px;
   margin-left: 30px;
   margin-right: 30px;
-  font-weight: 400;
-  font-size: 150%;
   color: #000000;
-  font-family: 'Rouge Script', cursive;
+  font-family: 'Dancing Script', cursive;
 }
 </style>
 <style>

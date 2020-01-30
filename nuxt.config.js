@@ -12,7 +12,7 @@ module.exports = {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Rouge+Script&display=swap' }
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Rouge+Script|Dancing_Script|Libre+Baskerville&display=swap' }
     ]
   },
   /*
@@ -49,7 +49,8 @@ module.exports = {
         /* reCAPTCHA options */
         siteKey: '6LcjyNEUAAAAAEbjYR_6QHoJ9m1ubP7pv2_zVLGn',    // Site key for requests
         version: 3,     // Version
-        size: 'invisible'        // Size: 'compact', 'normal', 'invisible' (v2)
+        size: 'invisible', // Size: 'compact', 'normal', 'invisible' (v2)
+        hideBadge: true
       }
     ],
     ['nuxt-fontawesome', {

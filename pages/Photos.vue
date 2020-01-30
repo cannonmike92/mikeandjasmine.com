@@ -66,7 +66,7 @@ export default {
 
 <style scoped>
 .subheader {
-  font-family: 'Rouge Script', cursive;
+  font-family: 'Dancing Script', cursive;
   text-align: center;
   font-weight: 400;
   font-size: 1.5em;

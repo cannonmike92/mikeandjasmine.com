@@ -8,7 +8,7 @@
         <li>2:00-4:00pm Social Hour</li>
         <li>4:00pm Open Buffet</li>
         <li>5:00pm Cake Cutting</li>
-        <li>7:00pm Fin</li>
+        <li>7:00pm Farewell</li>
       </ul>
     </div>
   </div>
@@ -34,17 +34,16 @@ export default {
 <style scoped>
 
 .container {
-  font-family: 'Rouge Script', cursive;
+  font-family: 'Dancing Script', cursive;
   color:#000000;
-  letter-spacing: 1.5px;
-  font-weight: 400;
-  width: 50%;
+  width: 90%;
   margin-left: auto;
   margin-right:auto;
   max-width: 480px;
 }
 
 h1 {
+  font-family: 'Libre Baskerville';
   text-align: center;
   font-size: 250%;
 }

@@ -45,27 +45,25 @@ export default {
 }
 
 .title {
-  font-family: 'Rouge Script', cursive;
+  font-family: 'Dancing Script', cursive;
   text-align: center;
-  font-weight: 400;
-  font-size: 250%;
   color: #000000;
-  letter-spacing: 1.5px;
 }
 
 .subheader {
-  font-family: 'Rouge Script', cursive;
+  font-family: 'Libre Baskerville';
   text-align: center;
-  font-weight: 400;
-  font-size: 150%;
+  font-size: 100%;
   color: #000000;
-  letter-spacing: 1.5px;
 }
+
 p {
-  font-family: 'Rouge Script', cursive;
+  font-family: 'Dancing Script', cursive;
   font-weight: 400;
   text-align: center;
 }
+</style>
+<style scoped>
 @media only screen and (min-width: 992px) {
   p {
     display: none;
