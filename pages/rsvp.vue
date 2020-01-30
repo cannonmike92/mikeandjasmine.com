@@ -68,7 +68,7 @@ export default {
     if (this.$route.query.id) {
       var self = this;
       self.id = this.$route.query.id
-      axios.get(`https://86uwbpp84g.execute-api.us-east-1.amazonaws.com/prod/${self.id}`)
+      axios.get(`https://86uwbpp84g.execute-api.us-east-1.amazonaws.com/prod/get/${self.id}`)
         .then((response) => {
           self.email = response.data.Item.email;
           self.phone = response.data.Item.phone;
@@ -122,10 +122,11 @@ export default {
       try {
         const token = await this.$recaptcha.execute('login')
 
-        axios.post(`https://86uwbpp84g.execute-api.us-east-1.amazonaws.com/prod/${this.id}/`, {
+        axios.put(`https://86uwbpp84g.execute-api.us-east-1.amazonaws.com/prod/`, {
             rsvp: {
               'people': this.people
             },
+            'id': this.id,
             'token': token
           })
           .then((response) => {
