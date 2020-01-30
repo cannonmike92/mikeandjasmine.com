@@ -122,7 +122,7 @@ export default {
       try {
         const token = await this.$recaptcha.execute('login')
 
-        axios.put(`https://86uwbpp84g.execute-api.us-east-1.amazonaws.com/prod/${this.id}/`, {
+        axios.post(`https://86uwbpp84g.execute-api.us-east-1.amazonaws.com/prod/${this.id}/`, {
             rsvp: {
               'people': this.people
             },
