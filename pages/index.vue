@@ -45,20 +45,20 @@ export default {
 }
 
 .title {
-  font-family: 'Dancing Script', cursive;
+  font-family: 'Dancing Script', Helvetica;
   text-align: center;
   color: #000000;
 }
 
 .subheader {
-  font-family: 'Libre Baskerville';
+  font-family: 'Libre Baskerville', Helvetica;
   text-align: center;
   font-size: 100%;
   color: #000000;
 }
 
 p {
-  font-family: 'Dancing Script', cursive;
+  font-family: 'Dancing Script', Helvetica;
   font-weight: 400;
   text-align: center;
 }

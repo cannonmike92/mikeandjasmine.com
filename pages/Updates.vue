@@ -83,11 +83,11 @@ export default {
 
 h4 {
   font-size: 125%;
-  font-family: 'Dancing Script';
+  font-family: 'Dancing Script', Helvetica;
 }
 
 p {
-  font-family: 'Libre Baskerville';
+  font-family: 'Libre Baskerville', Helvetica;
 }
 
 .btn-outline-success {

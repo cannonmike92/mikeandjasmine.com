@@ -42,7 +42,7 @@ export default {
 }
 
 .title {
-  font-family: 'Libre Baskerville', cursive;
+  font-family: 'Libre Baskerville', Helvetica;
   text-align: center;
   font-size: 250%;
   color: #000000;
@@ -50,7 +50,7 @@ export default {
 
 h5 {
   text-align: center;
-  font-family: 'Libre Baskerville', cursive;
+  font-family: 'Libre Baskerville', Helvetica;
   color: #000000;
 }
 
@@ -61,7 +61,7 @@ img {
 }
 
 .subheader {
-  font-family: 'Dancing Script', cursive;
+  font-family: 'Dancing Script', Helvetica;
   text-align: center;
   font-size: 150%;
   color: #000000;

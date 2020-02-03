@@ -12,7 +12,7 @@ module.exports = {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Rouge+Script|Dancing_Script|Libre+Baskerville&display=swap' }
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Dancing_Script|Libre+Baskerville&display=swap' }
     ]
   },
   /*
