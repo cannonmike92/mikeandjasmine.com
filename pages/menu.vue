@@ -8,7 +8,7 @@
       <h5>Pear Crostini</h5>
       <h3>Entrees</h3><hr>
       <h5>Slow Roasted Halal Beef Brisket with Sesame Hoisin Au jus</h5>
-      <h5>Chicken Fried Rice with Shiitake Mushrooms and Baby Bok Choy</h5>
+      <h5>Halal Chicken Fried Rice with Shiitake Mushrooms and Baby Bok Choy</h5>
       <h3>Sides</h3><hr>
       <h5>Ginger Garlic Vegetables</h5>
       <h5>Sauteed Corn</h5>
