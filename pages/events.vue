@@ -34,7 +34,7 @@ export default {
 <style scoped>
 
 .container {
-  font-family: 'Dancing Script', Helvetica;
+  font-family: 'Dancing Script';
   color:#000000;
   width: 90%;
   margin-left: auto;
@@ -43,7 +43,7 @@ export default {
 }
 
 h1 {
-  font-family: 'Libre Baskerville', Helvetica;
+  font-family: 'Libre Baskerville';
   text-align: center;
   font-size: 250%;
 }

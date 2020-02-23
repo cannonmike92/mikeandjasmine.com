@@ -38,11 +38,11 @@ export default {
 
 h1,h3 {
   text-align: center;
-  font-family: 'Libre Baskerville', Helvetica;
+  font-family: 'Libre Baskerville';
   color: #000000;
 }
 h5 {
-  font-family: 'Dancing Script', Helvetica;
+  font-family: 'Dancing Script';
   color: #000000;
   margin-bottom: 20px;
 }

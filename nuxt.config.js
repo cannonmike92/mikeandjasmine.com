@@ -12,7 +12,6 @@ module.exports = {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Dancing_Script|Libre+Baskerville&display=swap' }
     ]
   },
   /*
@@ -44,6 +43,7 @@ module.exports = {
       id: 'UA-73202553-3'
       }
     ],
+    'nuxt-webfontloader',
     [
       '@nuxtjs/recaptcha', {
         /* reCAPTCHA options */
@@ -68,5 +68,10 @@ module.exports = {
   bootstrapVue: {
     bootstrapCSS: true, // Or `css: false`
     bootstrapVueCSS: true // Or `bvCSS: false`
+  },
+  webfontloader: {
+    google: {
+      families: ['Dancing+Script:300,400,600&display=swap','Libre+Baskerville:300,400,600&display=swap']
+    }
   }
 }

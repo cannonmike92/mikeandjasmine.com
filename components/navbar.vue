@@ -62,7 +62,7 @@ export default {
   margin-left: 30px;
   margin-right: 30px;
   color: #000000;
-  font-family: 'Dancing Script', Helvetica;
+  font-family: 'Dancing Script';
 }
 </style>
 <style>
