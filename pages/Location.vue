@@ -6,7 +6,7 @@
       The Windsor
     </h2>
     <h2 class="subheader">At Hebron Park</h2><br>
-    <b-img style="width:60%;" src="https://www.windsorparkdallas.com/wp-content/uploads/2015/09/82.jpg"/><br>
+    <b-img-lazy style="width:60%;" src="https://www.windsorparkdallas.com/wp-content/uploads/2015/09/82.jpg"/><br>
     <h5><a href="https://goo.gl/maps/KXWdoizLWgw1PBNCA">3016 E. Hebron Parkway • Carrollton, TX 75010 </a></h5>
     <h5><a href="https://www.windsorparkdallas.com/">https://www.windsorparkdallas.com/</a></h5>
     <h5>(972)-306-3300</h5>
