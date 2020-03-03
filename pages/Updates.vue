@@ -6,17 +6,16 @@
   </div>
   <div v-else class="container">
     <h4 class="subheader">Recent Updates</h4>
-    <b-card v-for="event in events" v-if="event.active" :key="event.guid" :title="event.title" style="max-width: 40rem;
+    <b-card v-for="event in events" v-if="event.active" :key="event.guid" style="max-width: 40rem;
         display: block;
         margin-left: auto;
         margin-right: auto;" class="mb-2">
       <p style="float:right;color:grey;">
         {{ hrDate(event.modified) }}
       </p><br><br>
-      <p>
-        {{ event.body }}
-        <a v-if="event.url" :href="event.url">Link</a>
-      </p>
+      <p>{{ event.title}}</p>
+      <p>{{ event.body }}</p>
+      <p><a v-if="event.url" :href="event.url">Link</a></p>
     </b-card>
     <br>
     <b-button pill variant="outline-success" href="https://www.pushbullet.com/channel?tag=mikeandjasmine">
@@ -81,12 +80,7 @@ export default {
   box-sizing: border-box;
 }
 
-h4 {
-  font-size: 125%;
-  font-family: 'Dancing Script';
-}
-
-p {
+p, h4 {
   font-family: 'Libre Baskerville';
 }
 
