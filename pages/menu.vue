@@ -5,7 +5,6 @@
       <br><br><h1>Menu</h1><br><br>
       <h3>Hors D'Oeuvres</h3><hr>
       <h5>Mushroom Empanadas</h5>
-      <h5>Pear Crostini</h5>
       <h3>Entrees</h3><hr>
       <h5>Slow Roasted Halal Beef Brisket with Sesame Hoisin Au jus</h5>
       <h5>Halal Chicken Fried Rice with Shiitake Mushrooms and Baby Bok Choy</h5>
