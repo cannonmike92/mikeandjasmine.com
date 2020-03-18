@@ -2,6 +2,7 @@
 <div>
   <nav-bar-component />
   <div class="form-container mx-auto">
+    <br><p>Please call us at (832)-515-1318 if you would like to completely cancel your RSVP</p><br>
     <b-form class="mx-auto">
       <b-form-group>
         <b-form-input :disabled="id.length>0" v-model="email" type="email" required placeholder="Contact Email" />
