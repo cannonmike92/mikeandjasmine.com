@@ -6,7 +6,7 @@
       <h1 class="title">
         The Wedding of Jasmine Khaleel & Mike Cannon
       </h1>
-      <h2 class="subheader">Now on July 4th, 2020</h2><br>
+      <h2 class="subheader">Reception Postponed to 2021</h2><br>
       <div class="container">
         <b-img
           fluid center rounded="circle"

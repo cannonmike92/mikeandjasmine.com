@@ -39,7 +39,8 @@ export default {
         'RailDistrictFriscoTexasEngagement-Jasmine+Mike-KyrstenAshlayPhotography-36-Edit',
         'RailDistrictFriscoTexasEngagement-Jasmine+Mike-KyrstenAshlayPhotography-54-Edit',
         'RailDistrictFriscoTexasEngagement-Jasmine+Mike-KyrstenAshlayPhotography-58-Edit',
-        'RailDistrictFriscoTexasEngagement-Jasmine+Mike-KyrstenAshlayPhotography-78-Edit'
+        'RailDistrictFriscoTexasEngagement-Jasmine+Mike-KyrstenAshlayPhotography-78-Edit',
+        'RailDistrictFriscoTexasEngagement-Jasmine+Mike-KyrstenAshlayPhotography-27-Edit'
       ],
       index: null,
       showModal: false,
