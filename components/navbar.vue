@@ -30,6 +30,9 @@
           <b-nav-item>
             <nuxt-link to="/updates">Updates
             </nuxt-link></b-nav-item>
+          <b-nav-item>
+            <nuxt-link to="/blog">Blog
+            </nuxt-link></b-nav-item>
         </b-navbar-nav>
       </b-collapse>
     </b-navbar>
